@@ -1,0 +1,16 @@
+alessandra\assignment\waesAssignment\pageobjects\ApiControlerGet.class
+alessandra\assignment\waesAssignment\support\RandomDataGenerator.class
+alessandra\assignment\waesAssignment\tests\ErrorMessages.class
+alessandra\assignment\waesAssignment\support\ApplicationControler.class
+alessandra\assignment\waesAssignment\support\TestClass.class
+alessandra\assignment\waesAssignment\support\report\ParallelReport.class
+alessandra\assignment\waesAssignment\tests\EndToEndTest.class
+alessandra\assignment\waesAssignment\support\factory\ContextFactory.class
+alessandra\assignment\waesAssignment\support\PageObject.class
+alessandra\assignment\waesAssignment\support\Environment.class
+alessandra\assignment\waesAssignment\support\Settings.class
+alessandra\assignment\waesAssignment\support\TestContext.class
+alessandra\assignment\waesAssignment\support\listeners\NgReportListener.class
+alessandra\assignment\waesAssignment\tests\SmokeTests.class
+alessandra\assignment\waesAssignment\pageobjects\ApiControlerPost.class
+alessandra\assignment\waesAssignment\support\SetData.class

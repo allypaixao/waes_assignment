@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Run_Tests_for_Test_API">
+              <span class="suite-name border-failed">Run Tests for Test API</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Run_Tests_for_Test_API">
+                    <span>C:\Users\alessandra.paixao\eclipse-workspace\waesAssignmentAPI\suites\testExecutionSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Run_Tests_for_Test_API">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Run_Tests_for_Test_API">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Run_Tests_for_Test_API">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Run_Tests_for_Test_API">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Run_Tests_for_Test_API">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Run_Tests_for_Test_API">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Run_Tests_for_Test_API" class="hide-methods failed suite-Run_Tests_for_Test_API"> (hide)</a> <!-- hide-methods failed suite-Run_Tests_for_Test_API -->
+                      <a href="#" panel-name="suite-Run_Tests_for_Test_API" class="show-methods failed suite-Run_Tests_for_Test_API"> (show)</a> <!-- show-methods failed suite-Run_Tests_for_Test_API -->
+                    </span>
+                    <div class="method-list-content failed suite-Run_Tests_for_Test_API">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validateGetNullRight">validateGetNullRight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Run_Tests_for_Test_API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Run_Tests_for_Test_API" class="hide-methods passed suite-Run_Tests_for_Test_API"> (hide)</a> <!-- hide-methods passed suite-Run_Tests_for_Test_API -->
+                      <a href="#" panel-name="suite-Run_Tests_for_Test_API" class="show-methods passed suite-Run_Tests_for_Test_API"> (show)</a> <!-- show-methods passed suite-Run_Tests_for_Test_API -->
+                    </span>
+                    <div class="method-list-content passed suite-Run_Tests_for_Test_API">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.SmokeTests" hash-for-method="sendGetToBaseURLReturns200">sendGetToBaseURLReturns200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.SmokeTests" hash-for-method="sendGetToNotAddedIDReturns404">sendGetToNotAddedIDReturns404</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.SmokeTests" hash-for-method="sendPostReturns200">sendPostReturns200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.EndToEndTest" hash-for-method="validateDiffCharsAndLengthReturnForLeftRigthPost">validateDiffCharsAndLengthReturnForLeftRigthPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.EndToEndTest" hash-for-method="validateDiffCharsReturnForLeftRigthPost">validateDiffCharsReturnForLeftRigthPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.EndToEndTest" hash-for-method="validateDiffLengthReturnForLeftRigthPost">validateDiffLengthReturnForLeftRigthPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.EndToEndTest" hash-for-method="validateEqualReturnForLeftRigthPost">validateEqualReturnForLeftRigthPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validateGetIdNotInitializedResponseMessage">validateGetIdNotInitializedResponseMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validateGetNullLeft">validateGetNullLeft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validatePostDataNotInBase64Response">validatePostDataNotInBase64Response</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validatePostEmptyBody400message">validatePostEmptyBody400message</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validatePostNotOnJsonFormatResponseCode">validatePostNotOnJsonFormatResponseCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Run_Tests_for_Test_API" title="alessandra.assignment.waesAssignment.tests.ErrorMessages" hash-for-method="validatePostSideNotSupported501message">validatePostSideNotSupported501message</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Run_Tests_for_Test_API -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Run_Tests_for_Test_API" class="panel Run_Tests_for_Test_API">
+          <div class="suite-Run_Tests_for_Test_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">alessandra.assignment.waesAssignment.tests.ErrorMessages</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetNullRight">
+                  </a> <!-- validateGetNullRight -->
+                  <span class="method-name">validateGetNullRight</span>
+                  <div class="stack-trace">java.lang.RuntimeException:  HTTP error code : 204
+	at alessandra.assignment.waesAssignment.pageobjects.ApiControlerGet.sendGetMothodForJsonResponse(ApiControlerGet.java:83)
+	at alessandra.assignment.waesAssignment.tests.ErrorMessages.validateGetNullRight(ErrorMessages.java:177)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Will send a GET method to the id with just left side with elementand validate the reurned message: Right side contains no value.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Run_Tests_for_Test_API-class-failed -->
+          <div class="suite-Run_Tests_for_Test_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alessandra.assignment.waesAssignment.tests.EndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDiffCharsAndLengthReturnForLeftRigthPost">
+                  </a> <!-- validateDiffCharsAndLengthReturnForLeftRigthPost -->
+                  <span class="method-name">validateDiffCharsAndLengthReturnForLeftRigthPost</span>
+                  <em>
+(Will send two post methods with left and right values anda validate the json returned to DIFFERENT_LENGTH)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDiffCharsReturnForLeftRigthPost">
+                  </a> <!-- validateDiffCharsReturnForLeftRigthPost -->
+                  <span class="method-name">validateDiffCharsReturnForLeftRigthPost</span>
+                  <em>
+(Will send two post methods with left and right values anda validate the json returned to DIFFERENT_CHARS)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDiffLengthReturnForLeftRigthPost">
+                  </a> <!-- validateDiffLengthReturnForLeftRigthPost -->
+                  <span class="method-name">validateDiffLengthReturnForLeftRigthPost</span>
+                  <em>
+(Will send two post methods with left and right values anda validate the json returned is DIFFERENT_LENGTH)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEqualReturnForLeftRigthPost">
+                  </a> <!-- validateEqualReturnForLeftRigthPost -->
+                  <span class="method-name">validateEqualReturnForLeftRigthPost</span>
+                  <em>
+(Will send two post methods with left and right values anda validate the json returned to EQUAL)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Run_Tests_for_Test_API-class-passed -->
+          <div class="suite-Run_Tests_for_Test_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alessandra.assignment.waesAssignment.tests.ErrorMessages</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetIdNotInitializedResponseMessage">
+                  </a> <!-- validateGetIdNotInitializedResponseMessage -->
+                  <span class="method-name">validateGetIdNotInitializedResponseMessage</span>
+                  <em>
+(Will send a GET method to /diff with a non added ID and validate the returned message to: ID id not initialized.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGetNullLeft">
+                  </a> <!-- validateGetNullLeft -->
+                  <span class="method-name">validateGetNullLeft</span>
+                  <em>
+(Will send a GET method to the id with just right side with value and validate the reurned message: Left side contains no value.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePostDataNotInBase64Response">
+                  </a> <!-- validatePostDataNotInBase64Response -->
+                  <span class="method-name">validatePostDataNotInBase64Response</span>
+                  <em>
+(Will send a GET method to /diff with a non base 64 body returned message: Data in body not Base64 formatted.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePostEmptyBody400message">
+                  </a> <!-- validatePostEmptyBody400message -->
+                  <span class="method-name">validatePostEmptyBody400message</span>
+                  <em>
+(Will send a POST method to with an empty body and validate the returned message. Error code expected is 400. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePostNotOnJsonFormatResponseCode">
+                  </a> <!-- validatePostNotOnJsonFormatResponseCode -->
+                  <span class="method-name">validatePostNotOnJsonFormatResponseCode</span>
+                  <em>
+(Will send a Post method to /diff method and validate 415 code returned)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePostSideNotSupported501message">
+                  </a> <!-- validatePostSideNotSupported501message -->
+                  <span class="method-name">validatePostSideNotSupported501message</span>
+                  <em>
+(Will send a POST method with an side parameter as up and validate the returned message. Error code expected is 501. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Run_Tests_for_Test_API-class-passed -->
+          <div class="suite-Run_Tests_for_Test_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">alessandra.assignment.waesAssignment.tests.SmokeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendGetToBaseURLReturns200">
+                  </a> <!-- sendGetToBaseURLReturns200 -->
+                  <span class="method-name">sendGetToBaseURLReturns200</span>
+                  <em>
+(Will send a GET method to /diff method and validate 200 code returned)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendGetToNotAddedIDReturns404">
+                  </a> <!-- sendGetToNotAddedIDReturns404 -->
+                  <span class="method-name">sendGetToNotAddedIDReturns404</span>
+                  <em>
+(Will send a GET method to /diff method and validate 404 code returned)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendPostReturns200">
+                  </a> <!-- sendPostReturns200 -->
+                  <span class="method-name">sendPostReturns200</span>
+                  <em>
+(Will send a POST method with id, side and value, expecting a 200 code on response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Run_Tests_for_Test_API-class-passed -->
+        </div> <!-- panel Run_Tests_for_Test_API -->
+        <div panel-name="test-xml-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\alessandra.paixao\eclipse-workspace\waesAssignmentAPI\suites\testExecutionSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Run Tests for Test API&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Assessment Tests&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;alessandra.assignment.waesAssignment.tests.SmokeTests&quot;/&gt;
+      &lt;class name=&quot;alessandra.assignment.waesAssignment.tests.EndToEndTest&quot;/&gt;
+      &lt;class name=&quot;alessandra.assignment.waesAssignment.tests.ErrorMessages&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Assessment Tests --&gt;
+&lt;/suite&gt; &lt;!-- Run Tests for Test API --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Run Tests for Test API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Assessment Tests (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Run Tests for Test API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Run Tests for Test API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Run_Tests_for_Test_API');
+function tableData_Run_Tests_for_Test_API() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sendPostReturns200')
+data.setCell(0, 2, 'alessandra.assignment.waesAssignment.tests.SmokeTests')
+data.setCell(0, 3, 2130);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sendGetToNotAddedIDReturns404')
+data.setCell(1, 2, 'alessandra.assignment.waesAssignment.tests.SmokeTests')
+data.setCell(1, 3, 1758);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sendGetToBaseURLReturns200')
+data.setCell(2, 2, 'alessandra.assignment.waesAssignment.tests.SmokeTests')
+data.setCell(2, 3, 1756);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateDiffCharsAndLengthReturnForLeftRigthPost')
+data.setCell(3, 2, 'alessandra.assignment.waesAssignment.tests.EndToEndTest')
+data.setCell(3, 3, 410);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateDiffLengthReturnForLeftRigthPost')
+data.setCell(4, 2, 'alessandra.assignment.waesAssignment.tests.EndToEndTest')
+data.setCell(4, 3, 401);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateGetNullLeft')
+data.setCell(5, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(5, 3, 353);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateEqualReturnForLeftRigthPost')
+data.setCell(6, 2, 'alessandra.assignment.waesAssignment.tests.EndToEndTest')
+data.setCell(6, 3, 334);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateGetNullRight')
+data.setCell(7, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(7, 3, 291);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateDiffCharsReturnForLeftRigthPost')
+data.setCell(8, 2, 'alessandra.assignment.waesAssignment.tests.EndToEndTest')
+data.setCell(8, 3, 268);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateGetIdNotInitializedResponseMessage')
+data.setCell(9, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(9, 3, 253);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validatePostEmptyBody400message')
+data.setCell(10, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(10, 3, 239);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validatePostNotOnJsonFormatResponseCode')
+data.setCell(11, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(11, 3, 166);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validatePostDataNotInBase64Response')
+data.setCell(12, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(12, 3, 143);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validatePostSideNotSupported501message')
+data.setCell(13, 2, 'alessandra.assignment.waesAssignment.tests.ErrorMessages')
+data.setCell(13, 3, 120);
+window.suiteTableData['Run_Tests_for_Test_API']= { tableData: data, tableDiv: 'times-div-Run_Tests_for_Test_API'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Run_Tests_for_Test_API">
+              </div> <!-- times-div-Run_Tests_for_Test_API -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Run Tests for Test API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Run_Tests_for_Test_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">alessandra.assignment.waesAssignment.tests.SmokeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sendGetToBaseURLReturns200</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendGetToNotAddedIDReturns404</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendPostReturns200</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alessandra.assignment.waesAssignment.tests.EndToEndTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDiffCharsAndLengthReturnForLeftRigthPost</span>
+                <span class="method-start">2345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateDiffCharsReturnForLeftRigthPost</span>
+                <span class="method-start">2432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateDiffLengthReturnForLeftRigthPost</span>
+                <span class="method-start">2692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateEqualReturnForLeftRigthPost</span>
+                <span class="method-start">2884 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">alessandra.assignment.waesAssignment.tests.ErrorMessages</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateGetIdNotInitializedResponseMessage</span>
+                <span class="method-start">2965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateGetNullLeft</span>
+                <span class="method-start">3226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateGetNullRight</span>
+                <span class="method-start">3355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePostDataNotInBase64Response</span>
+                <span class="method-start">3503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePostEmptyBody400message</span>
+                <span class="method-start">3688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePostNotOnJsonFormatResponseCode</span>
+                <span class="method-start">3831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePostSideNotSupported501message</span>
+                <span class="method-start">3877 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

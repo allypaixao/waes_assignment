@@ -1,0 +1,13 @@
+Total coverage:
+
+The project has 57% coverage according to jUnit calculations, excluding the test package. 
+Screenshot at: weaesworks-differ-for-testers-comments/images
+
+Assuming that the team decided for total code coverage, it should be increased. Starting on adding more tests to DifferService.class then creating tests for the exception package
+All the implemented tests are passing.
+
+The following points Should be improved:
+ - The exception package does not have any coverage would be important to improve this as it is essential to make sure any null pointer or unexpected error will be trow to the user
+ - At the test class SidesServiceTest test 2 has a depency on test 1, would be better if the tests could run without any dependency
+ - testDifferAgainstNullLeftShouldReturnUnequalLengths test has two asserts in the same test, the ideal is to have just one validation per test. 
+	- Another similar test should be added to validate right side as it is returning null instead of the same message for left

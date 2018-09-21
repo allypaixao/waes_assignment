@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.59 s <<< FAILURE! - in TestSuite
+validateDiffLengthReturnForLeftRigthPost(alessandra.assignment.waesAssignment.tests.EndToEndTest)  Time elapsed: 0.111 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Reponse Body: {"detail":"Values are different on char(s) [2] [6].","type":"DIFFERENT_CHARS"} expected [{"type":"DIFFERENT_LENGTH"}] but found [{"detail":"Values are different on char(s) [2] [6].","type":"DIFFERENT_CHARS"}]
+	at alessandra.assignment.waesAssignment.tests.EndToEndTest.validateDiffLengthReturnForLeftRigthPost(EndToEndTest.java:128)
+
+validateGetNullLeft(alessandra.assignment.waesAssignment.tests.ErrorMessages)  Time elapsed: 0.103 s  <<< FAILURE!
+java.lang.AssertionError: expected [{"detail":"Left side contains no value.","type":"DIFFERENT_LENGTH"}] but found [{"type":"EQUAL"}]
+	at alessandra.assignment.waesAssignment.tests.ErrorMessages.validateGetNullLeft(ErrorMessages.java:227)
+
+validateGetNullRight(alessandra.assignment.waesAssignment.tests.ErrorMessages)  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.RuntimeException:  HTTP error code : 204
+	at alessandra.assignment.waesAssignment.tests.ErrorMessages.validateGetNullRight(ErrorMessages.java:177)
+

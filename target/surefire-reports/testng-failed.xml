@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Run Tests for Test API]">
+  <test thread-count="5" verbose="0" name="Assessment Tests(failed)" parallel="methods">
+    <classes>
+      <class name="alessandra.assignment.waesAssignment.tests.EndToEndTest">
+        <methods>
+          <include name="validateDiffLengthReturnForLeftRigthPost"/>
+        </methods>
+      </class> <!-- alessandra.assignment.waesAssignment.tests.EndToEndTest -->
+      <class name="alessandra.assignment.waesAssignment.tests.ErrorMessages">
+        <methods>
+          <include name="validateGetNullRight"/>
+          <include name="validateGetNullLeft"/>
+        </methods>
+      </class> <!-- alessandra.assignment.waesAssignment.tests.ErrorMessages -->
+    </classes>
+  </test> <!-- Assessment Tests(failed) -->
+</suite> <!-- Failed suite [Run Tests for Test API] -->
