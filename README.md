@@ -5,7 +5,7 @@ Author: Alessandra Paixao
 
 #You will need the following project in order to run the application used to this functional tests:
  https://bitbucket.org/waesworks/differ-for-testers/overview;
- Follow read me instructions to run;
+ Follow Readme instructions to run;
 
 #Notes: 
  - The test scenarios were writing in BDD(Cucumber Features) assuming that they were created in agreement with at least one BA and one developer(Los 3 amigos). Them can be find at: /features
@@ -38,7 +38,7 @@ Author: Alessandra Paixao
 - Can be found at /reports/report.html An example is added on the folder, each new run ir will be overided;
 
 
-Infos:
+#Infos:
 Maven 3.5.3, 
 JDK 1.8.0_161
 
@@ -46,9 +46,9 @@ JDK 1.8.0_161
 - Start application on project differ-for-testers by following previous instruction;
 - Donwload the project on your local machine
 - Open terminal console 
-- Navigate to the dowloaded folder
-- run the command: mvn compile test
-- After run a failure will be displayed as one scenario is failling:
- - Scenario ErrorMessages#004 is failing as right side empty message is not returning as expected.
- - the results can be verified at: /reports/report.html
+- From the project root:
+	- run the command: mvn compile test
+- After the run a failure will be displayed as one scenario is failling:
+	- Scenario ErrorMessages#004 is failing as right side empty message is not returning as expected.
+- The results can be verified at: /reports/report.html
 
