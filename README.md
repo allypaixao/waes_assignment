@@ -48,7 +48,15 @@ JDK 1.8.0_161
 - Open a new terminal console 
 - From the project root:
 	- run the command: mvn compile test
-- After the run a failure will be displayed as one scenario is failling:
-	- Scenario ErrorMessages#004 is failing as right side empty message is not returning as expected.
+- 
 - The results can be verified at: /reports/report.html
 
+#Improvements
+-TODOs were added on the code as suggestion to improve;
+
+#Other Comments:
+- After the run a failure will be displayed as one scenario is always failling:
+	- Scenario ErrorMessages#004 is failing as right side empty message is not returning as expected.
+- Scenario ErrorMessages#005 (failed sometimes as the random data genarator needs improvement to not return an id alredy used);
+- Other scenarios failed sometimes when the tests were run many times on a same setion;
+- For get method when the ID was not initiated it returns 204 or 404 on different executions, not sure why, needs more investigation;
