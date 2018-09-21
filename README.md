@@ -45,7 +45,7 @@ JDK 1.8.0_161
 #TO RUN:
 - Start application on project differ-for-testers by following previous instruction;
 - Donwload the project on your local machine
-- Open terminal console 
+- Open a new terminal console 
 - From the project root:
 	- run the command: mvn compile test
 - After the run a failure will be displayed as one scenario is failling:
